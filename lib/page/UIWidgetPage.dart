@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:mydemoproject/page/ui/BottomBarPage.dart';
 import 'package:mydemoproject/page/ui/ButtonWidgetPage.dart';
 import 'package:mydemoproject/page/ui/DialogWidgetPage.dart';
 import 'package:mydemoproject/page/ui/ImageWidgetPage.dart';
 import 'package:mydemoproject/page/ui/LoadingWidgetPage.dart';
+import 'package:mydemoproject/page/ui/TabbarPage.dart';
 import 'package:mydemoproject/page/ui/TextWidgetPage.dart';
 
 class UIWidgetPage extends StatefulWidget {
@@ -23,6 +25,12 @@ class UIWidgetPageState extends State<UIWidgetPage> {
       "icon": Icons.sync_problem,
       "path": new LoadingWidgetPage()
     },
+    {
+      "name": "BottomBar",
+      "icon": Icons.local_bar,
+      "path": new BottomBarPage(title: "BottomBarPage")
+    },
+    {"name": "Tabbar", "icon": Icons.tab, "path": new TabbarPage()},
   ];
 
   @override
